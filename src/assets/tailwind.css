@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* si pusiste reglas globales, abajo */
+body {
+  @apply font-sans bg-bg text-gray-900;
+}

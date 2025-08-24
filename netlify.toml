@@ -1,0 +1,13 @@
+[build]
+  # Build de tu SPA Vue
+  command   = "npm install && npm run build"
+  publish   = "dist"
+  # Ruta a tus funciones
+  functions = "netlify/functions"
+
+# Redirige todas las llamadas /api/* a la Function Express
+[[redirects]]
+  from    = "/api/*"
+  to      = "/.netlify/functions/server/:splat"
+  status  = 200
+  force   = true
