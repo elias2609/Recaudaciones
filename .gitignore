@@ -1,23 +1,29 @@
-.DS_Store
-node_modules
-/dist
+# dependencias de Node
+node_modules/
 
+# build de Vue
+dist/
 
-# local env files
-.env.local
+# Netlify CLI
+.netlify/
+
+# entornos
+.env
 .env.*.local
 
-# Log files
+# base de datos local
+data.sqlite
+netlify/functions/data.sqlite
+/tmp/
+
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
+coverage/
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# editores y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
