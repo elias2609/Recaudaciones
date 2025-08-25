@@ -39,7 +39,7 @@ export default {
       try {
         await this.$axios.post('/api/admin/login', { secret: this.secret })
         localStorage.setItem('admin-secret', this.secret)
-        this.$emit('login-success')
+        this.$emit('login-success', this.secret)
       } catch {
         this.error = 'Secreto inválido'
       } finally {

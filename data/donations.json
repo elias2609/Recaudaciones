@@ -1,0 +1,9 @@
+{
+  "fund": {
+    "id": 1,
+    "name": "Recaudación de Fondos",
+    "targetAmount": 2000,
+    "description": "Seed inicial"
+  },
+  "donations": []
+}
